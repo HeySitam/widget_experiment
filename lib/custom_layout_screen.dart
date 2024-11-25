@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class CustomGridLayoutDelegate extends MultiChildLayoutDelegate {
@@ -39,6 +41,7 @@ class CustomLayoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log("Text Widget : ${Text("Hello").toStringShort()}");
     return Scaffold(
       body: CustomMultiChildLayout(
           delegate: CustomGridLayoutDelegate(),
